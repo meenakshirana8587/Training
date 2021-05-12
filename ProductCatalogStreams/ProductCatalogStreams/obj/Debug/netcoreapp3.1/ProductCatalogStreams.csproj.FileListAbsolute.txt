@@ -1,0 +1,17 @@
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.exe
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.deps.json
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.runtimeconfig.json
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.runtimeconfig.dev.json
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\ProductCatalogStreams.pdb
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\Product_Library.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\Product_Library.pdb
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.csproj.CopyComplete
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.pdb
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.genruntimeconfig.cache

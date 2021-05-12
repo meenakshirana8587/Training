@@ -1,9 +1,0 @@
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.csprojAssemblyReference.cache
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.AssemblyInfoInputs.cache
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.AssemblyInfo.cs
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\bin\Debug\netcoreapp3.1\Product_Library.deps.json
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\bin\Debug\netcoreapp3.1\Product_Library.dll
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\bin\Debug\netcoreapp3.1\Product_Library.pdb
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.dll
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Product_Library\obj\Debug\netcoreapp3.1\Product_Library.pdb

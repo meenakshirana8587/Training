@@ -15,6 +15,8 @@ namespace Product_Library.Entites
        
         public int SellingPrice { get; set; } = 0;
         public string Name { get; set; }
+        public string ShortCode { get; set; }
+        public string Category { get; set; }
         public string Description { get; set; }
         public static int Prod_Id;
         public Product()

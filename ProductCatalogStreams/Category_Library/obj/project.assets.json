@@ -22,33 +22,6 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
-      },
-      "ProductCatalogStreams/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CsvHelper": "27.0.2",
-          "Product_Library": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProductCatalogStreams.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProductCatalogStreams.dll": {}
-        }
-      },
-      "Product_Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CsvHelper": "27.0.2"
-        },
-        "compile": {
-          "bin/placeholder/Product_Library.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Product_Library.dll": {}
-        }
       }
     }
   },
@@ -142,22 +115,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "ProductCatalogStreams/1.0.0": {
-      "type": "project",
-      "path": "../ProductCatalogStreams/ProductCatalogStreams.csproj",
-      "msbuildProject": "../ProductCatalogStreams/ProductCatalogStreams.csproj"
-    },
-    "Product_Library/1.0.0": {
-      "type": "project",
-      "path": "../Product_Library/Product_Library.csproj",
-      "msbuildProject": "../Product_Library/Product_Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CsvHelper >= 27.0.2",
-      "ProductCatalogStreams >= 1.0.0"
+      "CsvHelper >= 27.0.2"
     ]
   },
   "packageFolders": {
@@ -186,11 +148,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\ProductCatalogStreams\\ProductCatalogStreams.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\ProductCatalogStreams\\ProductCatalogStreams.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

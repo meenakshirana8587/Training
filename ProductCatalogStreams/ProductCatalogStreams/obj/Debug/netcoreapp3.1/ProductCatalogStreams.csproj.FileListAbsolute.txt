@@ -15,3 +15,5 @@ C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Deb
 C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.dll
 C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.pdb
 C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\obj\Debug\netcoreapp3.1\ProductCatalogStreams.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\Category_Library.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\ProductCatalogStreams\bin\Debug\netcoreapp3.1\Category_Library.pdb

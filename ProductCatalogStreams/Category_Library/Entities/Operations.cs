@@ -1,28 +1,28 @@
-﻿using System;
+﻿using CsvHelper;
+using CsvHelper.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using CsvHelper;
-using CsvHelper.Configuration;
 
-namespace Product_Library.Entites
+namespace Category_Library.Entities
 {
     public class Operations
 
 
     {
-        static string filepath = @"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/product.csv";
+        static string filepath = @"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/category.csv";
 
-        public static void AddProduct()
+        public static void AddCategory()
         {
-            
-            List<Product> data = new List<Product>();
+
+            List<Category> data = new List<Category>();
             string lastLine = File.ReadLines(filepath).Last();
 
             int s = lastLine[0] - '0';
-            Product.Prod_Id = s;
+            Category.Cat_Id = s;
             //Console.WriteLine(s);
 
 
@@ -36,21 +36,11 @@ namespace Product_Library.Entites
 
 
 
-            Console.WriteLine("Please enter product name: ");
+            Console.WriteLine("Please enter category name: ");
 
 
             Console.WriteLine("name is a required field ");
             string name = Console.ReadLine();
-            Console.WriteLine("Please enter product shortcode: ");
-
-
-            Console.WriteLine("shortcode is a required field ");
-            string shortcode = Console.ReadLine();
-            Console.WriteLine("Please enter product category: ");
-
-
-            Console.WriteLine("category is a required field ");
-            string category = Console.ReadLine();
 
 
 
@@ -67,21 +57,18 @@ namespace Product_Library.Entites
 
 
 
-            Console.WriteLine("Please enter product manufacturer: ");
+            Console.WriteLine("Please enter category shortcode: ");
 
-            Console.WriteLine("manufacturer is a required field ");
-            string manufacturer = Console.ReadLine();
+            Console.WriteLine("shortcode is a required field ");
+            string shortcode = Console.ReadLine();
 
 
-            Console.WriteLine("Please enter product price: ");
-
-            Console.WriteLine("price must be  greater than 0 ");
-            int price = Convert.ToInt32(Console.ReadLine());
+           
 
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture);
             config.HasHeaderRecord = false;
-            Product p = new Product { Id = Product.Prod_Id, Name = name, Description = description, Manufacturer = manufacturer, SellingPrice = price, ShortCode= shortcode, Category= category };
+            Category p = new Category { Id = Category.Cat_Id, Name = name, Description = description, ShortCode= shortcode};
             data.Add(p);
 
 
@@ -101,9 +88,6 @@ namespace Product_Library.Entites
                 //    csvwriter.WriteHeader<Product>();
                 //}
                 //csvwriter.NextRecord();
-
-
-
                 csvwriter.WriteRecords(data);
 
 
@@ -136,9 +120,9 @@ namespace Product_Library.Entites
         }
 
 
-        public static void listProducts()
+        public static void listCategory()
         {
-            string filepath = @"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/product.csv";
+            string filepath = @"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/category.csv";
 
 
             using (StreamReader input = File.OpenText(filepath))
@@ -148,32 +132,30 @@ namespace Product_Library.Entites
             {
                 IEnumerable<dynamic> records = csvReader.GetRecords<dynamic>();
 
-                Console.WriteLine("Id\tName\tDescription\tManufacturer\tPrice\tCategory\t\tShortCode");
+                Console.WriteLine("Id\tName\tShortCode\tDescription");
                 foreach (var record in records)
                 {
 
                     Console.Write(record.Id + "\t");
                     Console.Write(record.Name + "\t");
-                    Console.Write(record.Description + "\t\t");
-                    Console.Write(record.Manufacturer + "\t\t");
-                    Console.Write(record.SellingPrice + "\t");
-                    Console.Write(record.Category + "\t");
-                    Console.WriteLine(record.ShortCode + "\t");
+                    Console.Write(record.ShortCode + "\t\t");
+                    Console.WriteLine(record.Description + "\t\t");
+                    
                 }
 
             }
         }
 
-        public static void deleteProduct()
+        public static void deleteCategory()
         {
-            List<Product> records;
+            List<Category> records;
             Console.WriteLine("Please enter the id of product Id you want to delete");
             int id = Convert.ToInt32(Console.ReadLine());
 
             using (var reader = new StreamReader(filepath))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
-                records = csv.GetRecords<Product>().ToList();
+                records = csv.GetRecords<Category>().ToList();
 
                 for (int i = 0; i < records.Count; ++i)
                 {
@@ -192,31 +174,25 @@ namespace Product_Library.Entites
         }
 
 
-        public static void searchProduct(string searchName)
+        public static void searchCategory(string searchName)
         {
-            
-                var strLines = File.ReadLines(filepath);
-                foreach (var line in strLines)
-                {
-                
-                if (line.Split(',')[3].Equals( searchName))
+
+            var strLines = File.ReadLines(filepath);
+            foreach (var line in strLines)
+            {
+
+                if (line.Split(',')[1].Equals(searchName))
                 {
                     Console.WriteLine(line);
                     return;
                 }
-                
-                }
+
+            }
 
             //Console.WriteLine("record not found");
 
-                
-            }
 
         }
-    
 
-
-   }
-
-
-
+    }
+}

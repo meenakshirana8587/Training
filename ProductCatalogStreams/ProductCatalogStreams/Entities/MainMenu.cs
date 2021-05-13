@@ -1,7 +1,9 @@
 ﻿using Product_Library;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Category_Library.Entities;
 
 namespace ProductCatalogStreams.Entities
 {
@@ -22,6 +24,10 @@ namespace ProductCatalogStreams.Entities
             if(input==1)
             {
                 ProductMenu.productmenu();
+            }
+            else if (input == 2)
+            {
+                CategoryMenu.categorymenu();
             }
         }
 

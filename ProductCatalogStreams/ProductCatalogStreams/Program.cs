@@ -8,14 +8,16 @@ namespace ProductCatalogStreams
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string choice;
+
 
             // MainMenu mm = new MainMenu();
-            
-           
+            do
+            {
                 MainMenu.mainMenu();
-                //Console.WriteLine("do you want to perform another ")
-           
+                Console.WriteLine("do you want to perform another operation?(yes/no)");
+                choice = Console.ReadLine();
+            } while (choice == "yes");
         }
     }
 }

@@ -23,6 +23,19 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "Category_Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CsvHelper": "27.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Category_Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Category_Library.dll": {}
+        }
+      },
       "Product_Library/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -129,6 +142,11 @@
         "version.txt"
       ]
     },
+    "Category_Library/1.0.0": {
+      "type": "project",
+      "path": "../Category_Library/Category_Library.csproj",
+      "msbuildProject": "../Category_Library/Category_Library.csproj"
+    },
     "Product_Library/1.0.0": {
       "type": "project",
       "path": "../Product_Library/Product_Library.csproj",
@@ -137,6 +155,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Category_Library >= 1.0.0",
       "CsvHelper >= 27.0.2",
       "Product_Library >= 1.0.0"
     ]
@@ -168,6 +187,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj"
+            },
             "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Product_Library\\Product_Library.csproj": {
               "projectPath": "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Product_Library\\Product_Library.csproj"
             }

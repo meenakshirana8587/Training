@@ -1,68 +1,64 @@
-﻿using Product_Library.Entites;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Product_Library
+namespace Category_Library.Entities
 {
-    public class ProductMenu
+    public class CategoryMenu
     {
-        public static void productmenu()
+        public static void categorymenu()
         {
             string choice;
             do
             {
 
 
-                Console.WriteLine("1. Add product");
-                Console.WriteLine("2. List product");
-                Console.WriteLine("3. Delete product");
-                Console.WriteLine("4. Search product");
+                Console.WriteLine("1. Add Category");
+                Console.WriteLine("2. List Category");
+                Console.WriteLine("3. Delete Category");
+                Console.WriteLine("4. Search Category");
                 userInput();
-                Console.WriteLine("do you want to perform another operation in product?");
+                Console.WriteLine("do you want to perform another operation in category?");
                 choice = Console.ReadLine();
             } while (choice == "yes");
 
         }
-
-        
-
         public static void userInput()
         {
             string choice;
             int input = Convert.ToInt32(Console.ReadLine());
-            
+
             //List<Product> data = new List<Product>();
-           
-                if (input==1)
+
+            if (input == 1)
             {
                 do
                 {
 
-                    Operations.AddProduct();
-                    Console.WriteLine("do you want to add another product?(yes/no)");
+                    Operations.AddCategory();
+                    Console.WriteLine("do you want to add another category?(yes/no)");
                     choice = Console.ReadLine();
 
                 } while (choice == "yes");
             }
-               
+
 
 
 
             else if (input == 2)
             {
-                Operations.listProducts();
+                Operations.listCategory();
             }
 
             else if (input == 3)
             {
-                Operations.deleteProduct();
+                Operations.deleteCategory();
             }
             else if (input == 4)
             {
                 Console.WriteLine("Enter name to search ");
-                string name =Console.ReadLine();
-                Operations.searchProduct(name);
+                string name = Console.ReadLine();
+                Operations.searchCategory(name);
             }
         }
 

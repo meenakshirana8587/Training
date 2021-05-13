@@ -1,4 +1,9 @@
-C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\bin\Debug\netcoreapp3.1\ProductCatalogStreams.dll
 C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.csprojAssemblyReference.cache
 C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.AssemblyInfoInputs.cache
 C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\bin\Debug\netcoreapp3.1\Category_Library.deps.json
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\bin\Debug\netcoreapp3.1\Category_Library.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\bin\Debug\netcoreapp3.1\Category_Library.pdb
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.dll
+C:\Users\lenovo\source\repos\ProductCatalogStreams\Category_Library\obj\Debug\netcoreapp3.1\Category_Library.pdb

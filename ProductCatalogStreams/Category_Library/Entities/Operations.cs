@@ -40,9 +40,12 @@ namespace Category_Library.Entities
             Console.WriteLine("Please enter category name: ");
 
 
-            Console.WriteLine("name is a required field ");
-            string name = Console.ReadLine();
-
+            string name = "";
+            while (name.Length < 1)
+            {
+                Console.WriteLine("name is a required field ");
+                name = Console.ReadLine();
+            }
 
 
 
@@ -53,18 +56,23 @@ namespace Category_Library.Entities
 
             Console.WriteLine("Please enter description: ");
 
-            Console.WriteLine("description is a required field ");
-            string description = Console.ReadLine();
+            string description = "";
+            while (description.Length < 1)
+            {
+                Console.WriteLine("manufacturer is a required field ");
+                description = Console.ReadLine();
+            }
+
+
+            string shortcode = "";
+            while (shortcode.Length < 1|| shortcode.Length>4)
+            {
+                Console.WriteLine("shortcode is a required field and should not be more than 4 characters");
+                shortcode = Console.ReadLine();
+            }
 
 
 
-            Console.WriteLine("Please enter category shortcode: ");
-
-            Console.WriteLine("shortcode is a required field ");
-            string shortcode = Console.ReadLine();
-
-
-           
 
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture);

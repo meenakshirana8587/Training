@@ -22,7 +22,7 @@ namespace Product_Library.Entites
             List<Product> data = new List<Product>();
             string lastLine = File.ReadLines(filepath).Last();
 
-            int s = Convert.ToInt32(new string(lastLine[0], 1));
+            int s = lastLine[0] - '0';
             Product.Prod_Id = s;
             //Console.WriteLine(s);
 
@@ -35,18 +35,26 @@ namespace Product_Library.Entites
 
 
 
-
+            string name = "";
 
             Console.WriteLine("Please enter product name: ");
 
-
-            Console.WriteLine("name is a required field ");
-            string name = Console.ReadLine();
+            while (name.Length < 1)
+            {
+                Console.WriteLine("name is a required field ");
+                name = Console.ReadLine();
+                
+            }
             Console.WriteLine("Please enter product shortcode: ");
 
+            string shortcode="";
+            while (shortcode.Length < 1 || shortcode.Length > 4)
+            {
+                Console.WriteLine("shortcode is a required field ");
 
-            Console.WriteLine("shortcode is a required field ");
-            string shortcode = Console.ReadLine();
+                shortcode = Console.ReadLine();
+            }
+
             Console.WriteLine("Please enter product category: ");
 
 
@@ -96,22 +104,35 @@ namespace Product_Library.Entites
 
 
             Console.WriteLine("Please enter description: ");
-
-            Console.WriteLine("description is a required field ");
-            string description = Console.ReadLine();
+            string description = "";
+            while (description.Length < 1)
+            {
+                Console.WriteLine("description is a required field ");
+                description = Console.ReadLine();
+            }
 
 
 
             Console.WriteLine("Please enter product manufacturer: ");
 
-            Console.WriteLine("manufacturer is a required field ");
-            string manufacturer = Console.ReadLine();
+            string manufacturer = "";
+            while (manufacturer.Length < 1)
+            {
+                Console.WriteLine("manufacturer is a required field ");
+                manufacturer = Console.ReadLine();
+            }
+
+
 
 
             Console.WriteLine("Please enter product price: ");
 
-            Console.WriteLine("price must be  greater than 0 ");
-            int price = Convert.ToInt32(Console.ReadLine());
+            int price = 0;
+            while (price <= 0)
+            {
+                Console.WriteLine("price should be more than 0 ");
+                price = Convert.ToInt32(Console.ReadLine());
+            }
 
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture);

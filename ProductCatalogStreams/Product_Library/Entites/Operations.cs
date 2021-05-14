@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Category_Library.Entities;
 using CsvHelper;
 using CsvHelper.Configuration;
 
@@ -21,7 +22,7 @@ namespace Product_Library.Entites
             List<Product> data = new List<Product>();
             string lastLine = File.ReadLines(filepath).Last();
 
-            int s = lastLine[0] - '0';
+            int s = Convert.ToInt32(new string(lastLine[0], 1));
             Product.Prod_Id = s;
             //Console.WriteLine(s);
 
@@ -50,7 +51,41 @@ namespace Product_Library.Entites
 
 
             Console.WriteLine("category is a required field ");
-            string category = Console.ReadLine();
+           
+                List<Category> records;
+                
+                using (var reader = new StreamReader(@"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/category.csv"))
+                using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                {
+                    records = csv.GetRecords<Category>().ToList();
+
+                records.ForEach(i => Console.WriteLine(i.Id + " " + i.Name));
+                
+
+                
+            }
+
+            List<Category> productCategories = new List<Category>();
+            string choice;
+            string Cname=" ";
+            do
+            {
+                Console.WriteLine("GIVE CATEGORY ID ");
+                int id = Convert.ToInt32(Console.ReadLine());
+                var datas = records.Single((a) => a.Id == id);
+                if (datas != null)
+                    productCategories.Add(datas);
+                productCategories.ForEach(i => Cname = Cname+ i.Name );
+                
+                Console.WriteLine("FOR ADDING MORE CATEGORY : yes , else : no ");
+                choice = Console.ReadLine();
+            } while (choice == "yes");
+
+
+
+
+            
+           
 
 
 
@@ -81,7 +116,8 @@ namespace Product_Library.Entites
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture);
             config.HasHeaderRecord = false;
-            Product p = new Product { Id = Product.Prod_Id, Name = name, Description = description, Manufacturer = manufacturer, SellingPrice = price, ShortCode= shortcode, Category= category };
+            Product p = new Product { Id = Product.Prod_Id, Name = name, Description = description, Manufacturer = manufacturer, SellingPrice = price, ShortCode = shortcode, Category= Cname };
+
             data.Add(p);
 
 

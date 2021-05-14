@@ -154,7 +154,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj": {
+                "projectPath": "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

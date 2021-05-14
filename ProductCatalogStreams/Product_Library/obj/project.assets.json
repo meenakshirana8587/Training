@@ -22,6 +22,19 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Category_Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CsvHelper": "27.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Category_Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Category_Library.dll": {}
+        }
       }
     }
   },
@@ -115,10 +128,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Category_Library/1.0.0": {
+      "type": "project",
+      "path": "../Category_Library/Category_Library.csproj",
+      "msbuildProject": "../Category_Library/Category_Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Category_Library >= 1.0.0",
       "CsvHelper >= 27.0.2"
     ]
   },
@@ -148,7 +167,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\ProductCatalogStreams\\Category_Library\\Category_Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

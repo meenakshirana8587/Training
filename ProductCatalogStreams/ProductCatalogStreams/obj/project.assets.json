@@ -40,6 +40,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Category_Library": "1.0.0",
           "CsvHelper": "27.0.2"
         },
         "compile": {

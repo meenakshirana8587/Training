@@ -38,6 +38,7 @@
       },
       "Product_Library/1.0.0": {
         "dependencies": {
+          "Category_Library": "1.0.0",
           "CsvHelper": "27.0.2"
         },
         "runtime": {

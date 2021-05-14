@@ -13,12 +13,13 @@ namespace Category_Library.Entities
 
 
     {
+        public static List<Category> data= new List<Category>();
         static string filepath = @"C:/Users/lenovo/source/repos/ProductCatalogStreams/productcatalogcsvfiles/category.csv";
 
         public static void AddCategory()
         {
 
-            List<Category> data = new List<Category>();
+           
             string lastLine = File.ReadLines(filepath).Last();
 
             int s = lastLine[0] - '0';
@@ -69,7 +70,7 @@ namespace Category_Library.Entities
             var config = new CsvConfiguration(CultureInfo.InvariantCulture);
             config.HasHeaderRecord = false;
             Category p = new Category { Id = Category.Cat_Id, Name = name, Description = description, ShortCode= shortcode};
-            data.Add(p);
+            Operations.data.Add(p);
 
 
             using (var input = new StreamWriter(filepath, true))
